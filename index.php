@@ -17,34 +17,19 @@ require_once('inc/header.php');
 
 	<div id="container">
 		<header role="banner">
-			<nav id="locale">
-				<ul id="flags">
-					<li><a data-lang="en" title="English"><img src="img/en.png" alt="English" /></a></li>
-					<li><a data-lang="es" title="Spanish" ><img src="img/es.png" alt="Spanish" /></a></li>
-				</ul>
-			</nav>
-			
-			<h1><a id="logo" href="<?php echo page_root; ?>" class="visuallyhidden">Roundarch Isobar</a></h1>
+			<h1><a id="logo" href="<?php echo page_root; ?>" class="visuallyhidden">Quantum Rewards</a></h1>
 			
 			<canvas id="canvas-logo" width="500" height="300">
 				<strong><?php echo NO_CANVAS; ?></strong>
 			</canvas>
-
-			<ul id="social">
-				<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=5&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="facebook"></a></li>
-				<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=7&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="twitter"></a></li>
-				<li><a class="icon" href="http://www.shareaholic.com/api/share/?v=1&apitype=1&apikey=8943b7fd64cd8b1770ff5affa9a9437b&service=2&title=Isobar%20North%20America's%20Coding%20Standards%20and%20Frontend%20development%20Best%20Practices&link=http://na.isobar.com/standards/&source=Shareaholic" id="delicious"></a></li>
-				<li><a href="http://na.isobar.com" id="linkback"><?php echo LINKBACK; ?></a></li>
-			</ul>
 		</header>
-
 		<div id="main" role="document">
 			<!-- /////////////////////////// -->
 			<!-- Load the Content files here -->
 			<!-- /////////////////////////// -->
 			
 			<?php $mylang->include_sections(); ?>
-			
+	
 		</div><!--! End of #main section !-->
 		
 		<nav id="side" class="nav-right" role="navigation">
