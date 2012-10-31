@@ -28,18 +28,7 @@
             </div>
             <nav id="side" class="nav-right" role="navigation">
 			<h3 class="toc-title">Table of Contents</h3>
-<ul>
-  {% for p in site.pages | sort:weight %}
-    <li>
-      <a {% if p.url == page.url %}class="active"{% endif %} href="{{site.baseurl}}{{ p.url }}">
-        {{ p.title }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>		
-		</nav>
-
-<ul>
+<ul id="toc" style="display: block">
   {% for p in site.pages | sort:weight %}
     <li>
       <a {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.title  | downcase | remove:' '}}">
@@ -48,18 +37,8 @@
     </li>
   {% endfor %}
 </ul>		
-<ul>
-  {% for p in site.pages | sort:weight %}
-    <li>
-      <a {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.id }}">
-        {{ p.title }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>		
-
-		
-        </div>
+		</nav>
+		</div>
 
         <footer role="contentinfo">
             <p>
