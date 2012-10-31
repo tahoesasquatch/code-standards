@@ -42,7 +42,7 @@
 <ul>
   {% for p in site.pages | sort:weight %}
     <li>
-      <a {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.title }}">
+      <a {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.title  | downcase | remove:' '}}">
         {{ p.title }}
       </a>
     </li>
