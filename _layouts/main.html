@@ -26,9 +26,8 @@
             <div id="main" role="document">
 {{content}}
             </div>
-            
             <nav id="side" class="nav-right" role="navigation">
-                <h3 class="toc-title">Table of Contents</h3>
+			<h3 class="toc-title">Table of Contents</h3>
 <ul>
   {% for p in site.pages | sort:weight %}
     <li>
@@ -38,9 +37,7 @@
     </li>
   {% endfor %}
 </ul>		
-			
-				
-            </nav>
+		</nav>
             
         </div>
 
