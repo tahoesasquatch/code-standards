@@ -31,7 +31,7 @@
             <nav id="side" class="nav-right" role="navigation">
                 <h3 class="toc-title">Table of Contents</h3>
 <ul>
-{% for weight in (1..10) %}
+{% for weight in (0..100) %}
   {% for p in site.pages %}
     {% if p.weight == weight %}
       <li>
