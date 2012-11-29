@@ -21,27 +21,28 @@
                 <h1>Quantum Rewards</h1>
             </header>
       
+            <nav id="top" role="naviagion">
+                <ul>
+                    <li><a href="activaterewards.html>Activaterwards.com</a></li>
+                </ul>
+            </nav>
+
             <div id="main" role="document">
-  {% for p in site.pages | sort:weight %}
-    
-    
-        {{ p.content }}
-    
-    
-  {% endfor %}
+              {{ p.content }}
             </div>
-            <nav id="side" class="nav-right" role="navigation">
-			<h3 class="toc-title">Table of Contents</h3>
-<ul id="toc" style="display: block">
-  {% for p in site.pages | sort:weight %}
-    <li>
-      <a {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.title  | downcase | remove:' '}}">
-        {{ p.title }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>		
-		</nav>
+
+            <nav id="bottom" role="navigation">
+            <ul id="toc" style="display: block">
+              {% for p in site.pages | sort:weight %}
+                <li>
+                  <a {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.title  | downcase | remove:' '}}">
+                    {{ p.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>		
+            </nav>
+
 		</div>
 
         <footer role="contentinfo">
