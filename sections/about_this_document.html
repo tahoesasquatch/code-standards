@@ -1,0 +1,27 @@
+---
+layout: main
+title: About This Document
+---
+
+<section id="{{page.title | downcase | remove:' '}}">
+
+
+	<h2>How to edit this document</h2>
+
+	<p>To edit this document you will need to use git to make a local copy on your computer. Edit changes and than push it back to the server. It's explained below in more details</p>
+	
+	<ol>
+		<li>Create folder on your machine</li>
+		<li>Clone this repository
+			<code>git clone https://github.com/tahoesasquatch/code-standards .</code>
+		</li>
+		<li>Make your changes (using your favorite editor)</li>
+		<li>Commit your changes
+			<code>git commit master -a -m "something smart you just did"</code>
+
+		</li>
+		<li>Push your changes to the server
+			<code>git push origin</code></li>
+	</ol>
+
+</section>
