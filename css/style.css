@@ -310,19 +310,25 @@ header h1 a {
 
 #main {
 	border-right: 1px #dcdcdc solid;
-	display: inline-block;
+	display: block;
 	float: left;
 	overflow: hidden;
 	padding: 50px 29px 60px 0;
 }
 
-#side {
-	display: inline-block;
+#topnavigation {
+	display: block;
 	float: left;
 	font-size: 13px;	
 	padding: 0;
 	width: 300px;
-	position: relative;
+}
+#bottomnavigation {
+	display: block;
+	float: left;
+	font-size: 13px;	
+	padding: 0;
+	width: 300px;
 }
 
 #main > section {
