@@ -23,23 +23,23 @@
       
             <nav id="top" role="naviagion">
                 <ul>
-                    <li><a href="activaterewards.html>Activaterwards.com</a></li>
+                    <li><a href="activaterewards.html">Activaterwards.com</a></li>
                 </ul>
             </nav>
 
             <div id="main" role="document">
-              {{ p.content }}
+              {{ page.content }}
             </div>
 
             <nav id="bottom" role="navigation">
             <ul id="toc" style="display: block">
               {% for p in site.pages | sort:weight %}
                 <li>
-                  <a {% if p.url == page.url %}class="active"{% endif %} href="#{{ p.title  | downcase | remove:' '}}">
+                  <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
                     {{ p.title }}
                   </a>
                 </li>
-              {% endfor %}
+              {% endfor %}ig
             </ul>		
             </nav>
 
