@@ -307,40 +307,6 @@ header h1 a {
     z-index: 1;
 }
 
-#social li {
-    display: inline-block;
-    height: 35px;
-    margin-left: 6px;
-    vertical-align: top;
-}
-
-#social li a { 
-	background: url('img/sprite-social.png') no-repeat 0 0;
-	width: 35px; 
-}
-
-#social #facebook { background-position: -5px -5px; }
-#social #facebook:hover { background-position: -5px -47px; }
-
-#social #twitter { background-position: -46px -5px; }
-#social #twitter:hover { background-position: -46px -47px; }
-
-#social #delicious { background-position: -88px -5px; }
-#social #delicious:hover { background-position: -88px -47px; }
-
-#social #linkback { 
-	color: #ccc; 
-	font-family: Georgia, serif; 
-	font-size: 12px; 
-	font-style: italic; 
-	text-decoration: none; 
-	text-align: center; 
-	width: 60px; 
-	height: 15px; 
-	background: none;
-}
-
-#social #linkback:hover { color: #dcdcdc; }
 
 /* Logo + Container + Main + Section + Aside 
 ----------------------------------------------------------------------------------------------------*/
@@ -857,7 +823,7 @@ header h1 a { font-size: 48px; }
  
 a, a:visited { text-decoration: none; color: #FF3300; }
 
-body .fork, #side, header #social, canvas, .anchor_link, .backAnchor { visibility: hidden; }
+body .fork, #side, canvas, .anchor_link, .backAnchor { visibility: hidden; }
 
 
 .syntaxhighlighter { background: #ccc; }
