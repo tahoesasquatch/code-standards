@@ -514,6 +514,25 @@ p code, li code, table code {
 }
 
 
+/* Tables for content */
+
+table {
+	background-color: #444444;	
+}
+
+table th {
+	background-color: #444444;
+	color: white;
+	text-align: left;
+	padding: 10px;
+}
+
+table td {
+	text-align: left;
+	padding: 10px;
+}
+
+
 /* `Tabs
 ----------------------------------------------------------------------------------------------------*/
 
