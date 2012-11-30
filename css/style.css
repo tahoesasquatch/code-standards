@@ -236,29 +236,14 @@ header {
 	height: 60px;
 	width: 100%;
 	position: relative;
+	background: #3d3d3d
 }
 
-header a { 
-	width: 137px;
-	height: 39px;
-	display: inline-block;
+header h1  { 
+	color: #eee;
 }
 
-header h1 {
-    background: url('img/isobar.png') no-repeat 0 0;
-	position: absolute;
-	top: 60px;
-	width: 137px;
-	padding: 0;
-	height: 40px;
-}
 
-header canvas {
-	position: absolute;
-	visibility: hidden;
-	padding: 0;
-	top: -40px;
-}
 
 header h1 a {
     display: block;
@@ -267,13 +252,7 @@ header h1 a {
     text-indent: -9999em;
     width: 226px;
 }
-header h1 a { 
-    position: absolute;
-	text-indent: -9999em;
-    height: 70px;
-    width: 226px;
-	display: block;
-}
+
 
 #flags {
 	margin: 25px 0 0;
