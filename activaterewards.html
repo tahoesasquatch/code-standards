@@ -9,14 +9,14 @@ title: ActivateRewards.com
 
 	<h2>Legal Language Elements (ToS, Privacy Policy)</h2>
 
-	<p>All static documents legal documents like Privacy Policy, Terms of Service and Cardholder Agreement should be kept in for of static elements</p>
+	<p>All static documents legal documents like Privacy Policy, Terms of Service and Cardholder Agreement should be kept in form of static elements</p>
 	<p>Opt-in legal language will probably be stored in the database in the future to ensure control over different versions and </p>
 	
 	<h3>Naming convention for legal language elements</h3>
 
-		document_title promo_type promotion
+	<p>Proper element file name should contain three pieces: document title, promo type, specific promotion. If the document is intended to be used for multiple propmotions (generic document) or for many types of promotions, the appropiate part of the file name should be skipped</p>
 
-		Examples
+	Examples:
 
 		<table>
 			<tr>
@@ -56,7 +56,21 @@ title: ActivateRewards.com
 			</tr>
 		</table>
 
+		<p class="important">Please do not use abbreviations in the first part of the name. Do not call "tos_hmm.thtml" but rather spell it out "terms_of_service_hmm.thtml"</p>
 
-		<p>Please do not use abbreviations in the first part of the name. Do not call "tos_hmm.thtml" but rather spell it out "terms_of_service_hmm.thtml"</p>
+
+		<h3>HTML coding of elements</h3>
+
+		<p>Each element should contain a div tag wrapping the whole content with proper id. Ids should be based on element title but CamelCased</p>
+
+		Example, content of privacy_policy.thtml element
+
+		<code>
+			<div id="PrivacyPolicy">
+				<h2>Quantum Rewards Privacy Policy</h2>
+				...
+				...
+			</div>
+		</code>
 
 </section>
