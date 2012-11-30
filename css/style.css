@@ -518,6 +518,7 @@ p code, li code, table code {
 
 table {
 	background-color: #444444;	
+	border: 2px solid #444444;
 }
 
 table th {
@@ -528,6 +529,7 @@ table th {
 }
 
 table td {
+	background-color: #ffffff;
 	text-align: left;
 	padding: 10px;
 }
