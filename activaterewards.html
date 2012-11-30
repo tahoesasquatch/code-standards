@@ -9,7 +9,7 @@ title: ActivateRewards.com
 
 	<h2>Legal Language Elements (ToS, Privacy Policy)</h2>
 
-	<p>All static documents legal documents like Privacy Policy, Terms of Service and Cardholder Agreement should be kept in form of static elements</p>
+	<p>All static documents legal documents like Privacy Policy, Terms of Service and Cardholder Agreement should be kept in form of static elements.</p>
 	<p>Opt-in legal language will probably be stored in the database in the future to ensure control over different versions and </p>
 	
 	<h3>Naming convention for legal language elements</h3>
@@ -56,10 +56,14 @@ title: ActivateRewards.com
 			</tr>
 		</table>
 
-		<p class="">Please do not use abbreviations in the first part of the name. Do not call "tos_hmm.thtml" but rather spell it out "terms_of_service_hmm.thtml"</p>
+		<p class="warning">Please do not use abbreviations in the first part of the name. Do not call "tos_hmm.thtml" but rather spell it out "terms_of_service_hmm.thtml"</p>
 
 
 		<h3>HTML coding of elements</h3>
+
+		<p>All legal documents should be coded using proper HMTL. Use proper list tags (&lt;ul&rt;, &lt;ol&rt;) for lists and paragraphs for text. Use HTML entities for trademark, copyright and similar characters. Do not use multiple &lt;br&rt; tags to separate portions of text</p>
+
+		<p class="warning">Do not use inline styles. Do not define colors, fonts anything.</p>
 
 		<p>Each element should contain a div tag wrapping the whole content with proper id. Ids should be based on element title but CamelCased</p>
 
