@@ -322,17 +322,6 @@ header h1 a {
 	border-bottom: none;
 }
 
-#authors, 
-#team,
-#revisions {
-	display: inline-block;
-}
-#authors, 
-#team {
-	width: 50%;
-	height: 250px;
-	float: left;
-}
 
 .intro {
 	border-bottom: 1px #dcdcdc solid;
